@@ -30,7 +30,6 @@
         ]"
       />
     </van-cell-group>
-    <!-- !-! -->
     <div style="margin: 20px 40px">
       <van-button round block type="primary" native-type="submit">立即登录/注册</van-button>
     </div>
@@ -85,7 +84,9 @@ export default {
           }
           state.time = `${n}s`
         }, 1000)
-      } catch (err) {}
+      } catch (err) {
+        console.log(err)
+      }
     }
 
     // 表单提交
